@@ -1,6 +1,6 @@
 @google_search
 Feature: ilk feature file
-
+  #background: tekrar eden ilk adimlarda kullanilir (on kosul)
   Background: Google_sayfasina_git
     Given kullanici google gider
 
@@ -31,3 +31,10 @@ Feature: ilk feature file
 #  9. Belirli Scenario lari calistirmak icin cucumber tags ler kullanilir
 #  tag ler Fetuature, Scenario, Scerio Outline, Examples kelimeleri ile birlikte kullanilabilir
 #  10. Background: Her bir Scenario kelimesinden ONCE tek bir sefer calisir
+#  11. dryRun=false -> dryRun yokmus gibi normal sekilde calisir. Yani tum adimlari tek tetk browserda acar.
+#      dryRun=true  -> Yeni bir STEP(adim) eklendiginde sadece tanimlanmamis step definitions lari olusturmak icin kullanilir
+#      kullanilma sebebi zamandan tasarrufdur.
+
+#  Scenario: Invalid bilgiler ile login
+#  Scenario: Error mesajları check et
+#  Scenario: Şifremi unuttum seçeneği kontrolü
