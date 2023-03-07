@@ -18,8 +18,8 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",//features folder path
         glue =  {"stepdefinitions", "hooks"},   //stepdefinitions path
-        tags = "@failed_scenario",
-        dryRun = false
+        tags = "@homework_test",
+        dryRun = true
 
 )
 public class Runner {
